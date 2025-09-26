@@ -1,4 +1,4 @@
-from app_tb import app_tb
+from app import app
 
 def test_add():
-    assert app_tb.add(1,1) == 2
+    assert app.add(1,1) == 2
