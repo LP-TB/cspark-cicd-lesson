@@ -1,4 +1,4 @@
-from app import app
+from apptb import apptb
 
 def test_add():
-    assert app.add(1,1) == 2
+    assert apptb.add(1,1) == 2
