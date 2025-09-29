@@ -51,11 +51,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install poetry
           mkdir -p my_package/dist
+          
       - name: Download Build Artifacts
         uses: actions/download-artifact@v4
         with:
           name: builds
-          path: my_package/dist/*
+          path: my_package/dist/
       - name: Publish
         working-directory: my_package
         run: |
